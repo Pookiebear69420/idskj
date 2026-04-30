@@ -2,8 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import { GoogleGenAI, Type } from '@google/genai';
 import './App.css';
 
-// Fix 1: Pull the model initialization into a more robust structure
-const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
+// ✅ This ensures it doesn't try to initialize with an empty 'undefined' value
+const API_KEY = import.meta.env.VITE_GEMINI_API_KEY || "";
 const genAI = new GoogleGenAI(API_KEY);
 
 const PALETTE = ['#D63B3B', '#2E9E5B', '#2563EB', '#D97706'];
