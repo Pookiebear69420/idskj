@@ -1,0 +1,5 @@
+{
+  "name": "Remix: AI Jeopardy Generator",
+  "description": "Generate a custom Jeopardy board based on any topic.",
+  "requestFramePermissions": []
+}
